@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
 
 :root {
-    --bright: #ff4081; /* New neon pink for interactive elements */
-    --primary-bg: #141e30; /* Start screen gradient start */
-    --secondary-bg: #243b55; /* Start screen gradient end */
-    --board-bg-start: #1e1e2f; /* Game board gradient start */
-    --board-bg-end: #27293d;   /* Game board gradient end */
+    --bright: #00e676; /* Neon green for interactive elements */
+    --primary-bg: #2c003e; /* Dark purple for start screen gradient start */
+    --secondary-bg: #4a148c; /* Purple for start screen gradient end */
+    --board-bg-start: #004d40; /* Dark teal for game board gradient start */
+    --board-bg-end: #00695c;   /* Teal for game board gradient end */
 }
 
 * {
@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Arial', cursive;
 }
 
 .screen {
@@ -70,7 +70,7 @@ body {
 }
 
 .circle {
-    background: radial-gradient(circle, var(--bright), #f50057);
+    background: radial-gradient(circle, var(--bright), #00bfa5);
     position: absolute;
     border-radius: 50%;
     cursor: pointer;

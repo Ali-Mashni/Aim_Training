@@ -2,7 +2,7 @@
 
 This is a simple web-based aim training game built with HTML, CSS, and JavaScript. The game is designed to help you improve your aim by clicking on falling balls as quickly and accurately as possible.
 # Aim Training Game
-![Aim Training](img/Star.png)
+![Aim Training](img/Start.png)
 [Live Demo](https://YourUsername.github.io/YourRepositoryName/)
 
 ## Features

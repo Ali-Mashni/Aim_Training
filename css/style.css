@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+:root {
+    --bright: #ff4081; /* New neon pink for interactive elements */
+    --primary-bg: #141e30; /* Start screen gradient start */
+    --secondary-bg: #243b55; /* Start screen gradient end */
+    --board-bg-start: #1e1e2f; /* Game board gradient start */
+    --board-bg-end: #27293d;   /* Game board gradient end */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'DynaPuff', cursive;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.start-screen {
+    background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+}
+
+.game-screen {
+    background: none;
+    position: relative;
+}
+
+.timer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.start, .again {
+    font-size: 2.1rem;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.start:hover, .again:hover {
+    background: var(--bright);
+    border-color: var(--bright);
+}
+
+.board {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--board-bg-start), var(--board-bg-end));
+    overflow: hidden;
+}
+
+.circle {
+    background: radial-gradient(circle, var(--bright), #f50057);
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: fall 3s linear forwards;
+}
+
+/* Ball fall animation: from the starting position to the bottom */
+@keyframes fall {
+    from {
+        top: var(--start-top);
+    }
+    to {
+        top: var(--end-top);
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .start, .again {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIM Game</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div class="screen start-screen">
+    <h1>Aim Training</h1>
+    <a href="#" class="start" id="start">Start game</a>
+  </div>
+
+  <!-- Game Screen (initially hidden) -->
+  <div class="screen game-screen" style="display: none;">
+    <h3 class="timer"><span id="time-left">00:25</span> left</h3>
+    <div class="board" id="board"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

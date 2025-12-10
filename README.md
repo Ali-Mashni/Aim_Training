@@ -25,4 +25,4 @@ This is a simple web-based aim training game built with HTML, CSS, and JavaScrip
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepositoryName.git
+   git clone https://github.com/Ali-Mashni/Aim_Training.git
